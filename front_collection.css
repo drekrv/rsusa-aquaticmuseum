@@ -1,0 +1,72 @@
+
+body {
+    margin: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .line1 {
+    width: 1150px; /* Adjust the width of the lines */
+    height: 1px; /* Adjust the thickness of the lines */
+    background-color: black; /* Adjust the color of the lines */
+    margin: 0; /* Adjust the margin between the lines */
+    display:list-item;
+    list-style: none;
+  }
+  
+  .line2 {
+    width: 1150px; /* Adjust the width of the lines */
+    height: 3px; /* Adjust the thickness of the lines */
+    background-color: black; /* Adjust the color of the lines */
+    margin: 8px 0; /* Adjust the margin between the lines */
+    display:list-item;
+    list-style: none;
+  }
+  h1{
+    font-size: 500%;
+    font-family: bold Judson;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+  .line3 {
+    width: 1150px; /* Adjust the width of the lines */
+    height: 1px; /* Adjust the thickness of the lines */
+    background-color: black; /* Adjust the color of the lines */
+    
+    display:list-item;
+    list-style: none;
+  }
+  .background-image {
+    width: 100%; /* Set the width of the container */
+    margin: 20px  auto; /* Add some margin for spacing */
+    border: 1px solid #ccc; /* Add a border for styling */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  .background-image img {
+    width: 100%; /* Make the image fill the container */
+    height: 200px; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove any default inline styles */
+  }
+  .line4 {
+    width: 1150px; /* Adjust the width of the lines */
+    height: 1px; /* Adjust the thickness of the lines */
+    background-color: black; /* Adjust the color of the lines */
+    display:list-item;
+    list-style: none;
+  }
+  p{
+    text-align: center;
+    margin-top: 3px;
+  }
+  .line5 {
+    width: 1150px; /* Adjust the width of the lines */
+    height: 3px; /* Adjust the thickness of the lines */
+    background-color: black; /* Adjust the color of the lines */
+    display:list-item;
+    list-style: none;
+  }
+

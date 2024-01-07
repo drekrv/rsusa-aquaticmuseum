@@ -1,0 +1,207 @@
+
+
+.feature-container {
+    position: absolute;
+    left: 300px;
+    top: 846px;
+    width: 999px;
+    height: 373px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.7), rgba(0, 181, 218, 0.7), rgba(6, 62, 205, 0.7));
+
+  }
+
+.featured-box {
+    position: absolute;
+    left: 316px;
+    top: 863px;
+    width: 850px;
+    height: 341px;
+    background-color: #FFFFFE;
+    border-radius: 6px;
+    
+    .featured-content {
+      position: relative;
+      display: inline-block;
+      margin-top: 20px;
+      margin-left: 20px;
+  }
+  }
+
+.about-us{
+    position: absolute; 
+    left: 350px; 
+    top: 1390px; 
+    width: 899px; 
+    height: 187px; 
+    text-align: center; 
+    }
+
+    .about-container{
+        position: absolute; 
+        left: 300px; 
+        top: 1305px; 
+        width: 999px;
+        height: 322px; 
+        background-color: #FFFFFE;
+        z-index: -1;
+        }
+
+  
+
+.corevalue-container {
+    position: absolute;
+    left: 300px;
+    top: 1712px;
+    width: 999px;
+    height: 650px;
+    background-color: #0682A8;
+    z-index: -1;
+  }
+
+  .border1 {
+    position: absolute;
+    left: 349px;
+    top: 1754px;
+    width: 418px;
+    height: 550px;
+    border: 3px solid #FFBA31;
+    z-index: -1;
+  }
+
+  .border2 {
+    position: absolute;
+    left: 826px;
+    top: 1754px;
+    width: 418px;
+    height: 550px;
+    border: 3px solid #FFBA31;
+    z-index: -1;
+  }
+
+  .vission {
+    position: absolute;
+    left: 390px;
+    top: 1830px;
+    width: 336px;
+    height: 477px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  .mission {
+    position: absolute;
+    left: 869px;
+    top: 1830px;
+    width: 336px;
+    height: 477px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  .mandate {
+    position: absolute;
+    left: 350px;
+    top: 2528px;
+    width: 899px;
+    height:165px;
+    font-size: 20px; /* Adjust font size as needed */
+    
+  }
+        .mandate-container {
+            position: absolute;
+            left: 300px;
+            top: 2443px;
+            width: 999px;
+            height:300px;
+            background-color: #FFFFFE;
+            z-index: -1;
+        }
+
+  
+  .romblon {
+    position: absolute;
+    left: 300px;
+    top: 2890px;
+    width: 400px;
+    height:1278px;
+    font-size: 18px; /* Adjust font size as needed */
+   
+    
+  }
+       
+
+  .text-box {
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    resize: none; /* Prevent resizing of the textarea */
+    border: 1px transparent; /* Add a border for visibility */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    font-family: 'Arial', sans-serif; /* Use a specific font-family */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: transparent; /* Set the background color to transparent */
+    color: black; /* Set text color to black */
+    text-align: center; /* Align text at the center */
+  }
+
+  .romblon-textbox {
+    width: 100%;
+    height: 100%;
+    resize: none; 
+    border: 1px transparent;
+    box-sizing: border-box; 
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    color: black; 
+    text-align: left; 
+  }
+
+  .text-box::placeholder {
+    color: black; /* Change the placeholder text color to black */
+  }
+  .romblon-textbox::placeholder {
+    color: black; /* Change the placeholder text color to black */
+  }
+  
+
+  .next-btn {
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .next-btn:hover {
+    background-color: #aaa;
+  }
+
+  .next-btn::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 18px solid white;
+  }
+
+  .edit-button,
+.save-button {
+  background-color: transparent;
+  border: transparent; /* Adding a border for visibility (you can adjust styles as needed) */
+  padding: 5px 10px; /* Adjust padding as needed */
+  cursor: pointer; 
+  z-index: 1;
+  /* Show pointer cursor on hover */
+  /* Add other styles such as text color, font, etc. */
+}

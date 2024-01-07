@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Judson;
+}
+a {
+    color: #666;
+    font-size: 14px;
+    display: block;
+}
+.login-title {
+    text-align: center;
+}
+#login-page {
+    display: flex;
+}
+.notice {
+    font-size: 13px;
+    text-align: center;
+    color: #666;
+}
+.login {
+    width: 30%;
+    height: 100%;
+    background: #FFF;
+    padding: 40px;
+}
+.login a {
+    margin-top: 25px;
+    text-align: center;
+}
+.form-login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.form-login label {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+    color: #666;
+}
+.input-username,
+.input-password {
+    width: 100%;
+    background: #ededed;
+    border-radius: 25px;
+    margin: 4px 0 10px 0;
+    padding: 10px;
+    display: flex;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 4px 0;
+    outline: none;
+}
+button[type="submit"] {
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    padding: 14px;
+    border: solid #008552;
+    color: #000;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: ease all 0.3s;
+}
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+aside {
+    width: 88%;
+    height: 96vh;
+    background: linear-gradient(120deg, #3D9F7F, #00B5DA, #0480A7), center no-repeat;
+}
+aside img {
+    width: 30%;
+    height: 50%;
+    transform: scaleX(-1);
+    float: right;
+    margin-top: 55px;
+    margin-right: 40px;
+}
+.overlay-text {
+    position: absolute;
+    top: 52%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    font-family: Judson;
+    font-size: x-large;
+    line-height: 0;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+@keyframes moveWave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.wave-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 252px;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+    background: url('wave.svg');
+}
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000%;
+    height: 85%;
+    background: url('wave.svg');
+    animation: moveWave 30s linear infinite;
+}
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000%;
+    height: 80%;
+    transform: scaleX(-1);
+    background: url('wave.svg');
+    animation: moveWave 40s linear infinite;
+}
+.wave3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+    background: url('wave.svg');
+    animation: moveWave 40s linear infinite;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .login {
+        padding: 50px;
+        width: 40%;
+    }
+    .login-title {
+        margin-top: 200px;
+    }
+    .overlay-text {
+        font-size: larger;
+        top: 20%;
+        left: 58%;
+    }
+    aside img {
+        width: 38%;
+        height: 50%;
+        margin-top: 100px;
+        margin-right: 20px;
+    }
+    aside {
+        width: 60%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .login {
+        padding: 3px;
+        width: 45%;
+        margin-top: 40px;
+    }
+    #login-page {
+        display: flex;
+        height: fit-content;
+    }
+    aside {
+        height: fit-content;
+    }
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 57%;
+        color: white;
+        font-size: large;
+        letter-spacing: normal;
+    }
+    aside img {
+        height: 170px;
+        width: 140px;
+        margin-top: 140px;
+        margin-right: 20px;
+    }
+    .wave {
+        height: 100%;
+    }
+    .wave-container {
+        height: 257px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 12px;
+    }
+    button[type="submit"] {
+        font-size: 12px;
+    }
+}

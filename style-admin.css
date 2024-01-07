@@ -1,0 +1,55 @@
+body {
+    background-color: #f4f4f4;
+  }
+
+ /* .homepanel{
+    position: absolute;
+    width: 1366px;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    background-color: #471a1a;
+  }*/
+  
+  .navbar {
+    
+      position: absolute;
+      left: 50px;
+      top: 78px; /* Initial position, adjust as needed */
+      width: 200px;
+      height: 423px;
+      border-radius: 4px;
+      overflow: hidden;
+      background: linear-gradient(#2c80c4, #4be2dd); /* Gradient from #0A83A9 to #2AA9A5 */
+      padding-top: 100px; /* Move the content inside the navbar down by 20px */
+      z-index: 1;
+    }
+  
+    
+    .navbar li {
+      font-size: 30px;
+      font-family: 'Judson', sans-serif;
+      font-weight: bold;
+      margin-top: 30px;
+      cursor: pointer; /* Change cursor to pointer when hovering over text */
+    }
+  
+    .navbar ul {
+      list-style-type: none;
+      padding: 0px;
+      text-align: center;
+      z-index: 1;
+  
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      z-index: 2;
+    }
+  
+    .navbar a:hover {
+      color: #CFFFFC; /* Change text color on hover to #CFFFFC */
+    }
+
+  

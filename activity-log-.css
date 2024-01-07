@@ -1,0 +1,38 @@
+.activity-log-container {
+    position: absolute;
+    left: 300px; /* Updated left position to 418px */
+    top: 78px; /* Updated top position to 70px */
+    width: 999px;
+    height: 49px;
+    background-color: #D9D9D9;
+}
+
+.tab {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Updated font size to 20px */
+    font-weight: bold;
+    color: #4B4B56;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+#recently-added {
+    top: 10px; /* Adjusted top position */
+    left: 20px;
+
+  
+}
+
+#recently-deleted {
+    top: 10px; /* Adjusted top position */
+    left: 220px;
+
+}
+
+
+#recently-edited {
+    top: 10px; /* Adjusted top position */
+    left: 420px;
+}
+

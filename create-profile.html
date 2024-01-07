@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Collection</title>
+  <style>
+    /* CSS for layout */
+    body {
+    background-color: #FBFCFD;
+}
+
+.textbox-container input[type="text"] {
+      border-radius: 8px;
+      border: 2px solid #999999;
+      padding: 8px;
+      background-color: #F6F6F6;
+}
+
+label[for="SpeciesName_ID"] {
+  position: absolute;
+  top: 130px;
+  left: 627px;
+  height: 29px;
+  width: 175px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #4B4B56;
+}
+
+
+label[for="LocalName_ID"] {
+  position: absolute;
+  top: 205px;
+  left: 627px;
+  height: 29px;
+  width: 300px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #4B4B56;
+}
+
+
+label[for="Type_ID"] {
+  position: absolute;
+  top: 280px;
+  left: 627px;
+  height: 29px;
+  width: 85px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #4B4B56;
+  
+}
+
+label[for="FamilyName_ID"] {
+  position: absolute;
+  top: 355px;
+  left: 627px;
+  height: 30px;
+  width: 163px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #4B4B56;
+}
+
+label[for="SerialNo_ID"] {
+  position: absolute;
+  top: 430px;
+  left: 627px;
+  height: 30px;
+  width: 124px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #4B4B56;
+}
+
+label[for="Location_ID"] {
+  position: absolute;
+  top: 505px;
+  left: 627px;
+  height: 29px;
+  width: 124px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #4B4B56;
+}
+
+label[for="Description_ID"] {
+  position: absolute;
+  top: 610px;
+  left: 137px;
+  height: 28px;
+  width: 348px;
+  text-align: left;
+  color: #4B4B56;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+    #SpeciesName_ID {
+      position: absolute;
+      left: 627px;
+      top: 150px;
+      width: 582px;
+      height: 13px;
+    }
+
+    #LocalName_ID {
+      position: absolute;
+      left: 627px;
+      top: 225px;
+      width: 582px;
+      height: 13px;
+    }
+
+    #Type_ID {
+      position: absolute;
+      left: 627px;
+      top: 300px;
+      width: 151px;
+      height: 13px;
+    }
+
+    #FamilyName_ID {
+      position: absolute;
+      left: 627px;
+      top: 375px;
+      width: 151px;
+      height: 13px;
+    }
+
+    #SerialNo_ID {
+      position: absolute;
+      left: 627px;
+      top: 450px;
+      width: 151px;
+      height: 13px;
+    }
+
+    #Location_ID {
+      position: absolute;
+      left: 627px;
+      top: 525px;
+      width: 582px;
+      height: 13px;
+    }
+
+    #LocalName_ID {
+      position: absolute;
+      left: 627px;
+      top: 225px;
+      width: 582px;
+      height: 13px;
+    }
+
+    #Description_ID {
+      position: absolute;
+      left: 137px;
+      top: 640px;
+      width: 1072px;
+      height: 200px;
+      border-radius: 8px;
+      border: 2px solid #999999;
+      padding: 8px;
+      background-color: #F6F6F6;
+     
+    }
+
+    
+    /* Save button positioning */
+    #save-button {
+    position: absolute;
+    color: white;
+    top: 920px;
+    left: 1109px;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    background-color: #17CF77;
+    border-radius: 8px;
+    border: 2px solid #17CF77;
+    font-size: 30px; /* Changed text size to 30px */
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .container {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+}
+
+.border-frame {
+  position: absolute;
+  left: 105px;
+  top: 56px;
+  width: 1156px;
+  height: 960px;
+  border: 3px solid #999999;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+
+    
+
+  </style>
+</head>
+<body>
+
+  
+
+  <div id="Image_ID" style="position: absolute; left: 137px; top: 118px; width: 450px; height: 450px; border-radius: 8px; cursor: pointer; display: flex; justify-content: center; align-items: center; text-align: center; background-color: #F6F6F6; border: 2px solid #999999; font-size: 24px;">
+    <span>Click to add Photo</span>
+</div>
+
+
+  <!-- Textboxes with Labels on the right side -->
+  <div class="container">
+    <div class="textbox-container">
+      <label for="SpeciesName_ID">Scientific Name:</label>
+      <input type="text" id="SpeciesName_ID">
+    </div>
+
+    <div class="textbox-container">
+      <label for="Type_ID">Type:</label>
+      <input type="text" id="Type_ID">
+    </div>
+
+    <div class="textbox-container">
+      <label for="FamilyName_ID">Family Name:</label>
+      <input type="text" id="FamilyName_ID">
+    </div>
+
+    <div class="textbox-container">
+      <label for="SerialNo_ID">Serial No.</label>
+      <input type="text" id="SerialNo_ID">
+    </div>
+    
+    <div class="textbox-container">
+      <label for="Location_ID">Location:</label>
+      <input type="text" id="Location_ID">
+    </div>
+
+    <div class="textbox-container">
+      <label for="LocalName_ID">Local/Common Name:</label>
+      <input type="text" id="LocalName_ID">
+    </div>
+    
+    <div class="textbox-container">
+      <label for="Description_ID">Description</label>
+      <textarea id="Description_ID"></textarea>
+    </div>
+  </div>
+
+
+
+  <!-- Save button at the bottom -->
+  <div class="button-container">
+    <button id="save-button">Save</button>
+  </div>
+
+  <!-- Frame design -->
+  <div class="container">
+    <div class="border-frame"></div>
+    <div class="design-content">
+    </div>
+  </div>
+
+   <input type="file" id="image-input" name="image" style="display: none;" accept="image/*">
+
+
+
+  <!-- JavaScript to handle image selection and form submission -->
+  <script>
+
+const imageBox = document.getElementById("Image_ID");
+const imageInput = document.getElementById("image-input");
+const saveButton = document.getElementById("save-button");
+
+imageBox.addEventListener("click", function () {
+  imageInput.click();
+});
+
+imageInput.addEventListener("change", function () {
+  const selectedImage = imageInput.files[0];
+  if (selectedImage) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      imageBox.style.backgroundImage = `url(${e.target.result})`;
+      imageBox.style.backgroundSize = "100% 100%";
+      imageBox.innerText = ""; // Clear the text content
+    };
+    reader.readAsDataURL(selectedImage);
+  }
+});
+
+function checkSpeciesNameExistence(speciesName, callback) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "check_species_name.php", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      const response = JSON.parse(xhr.responseText);
+      const speciesExists = response.exists;
+      callback(speciesExists);
+    } else {
+      console.error("Error checking species name existence.");
+      callback(false); // Assume species doesn't exist to avoid blocking the saving process
+    }
+  };
+
+  xhr.send("speciesName=" + encodeURIComponent(speciesName));
+}
+
+saveButton.addEventListener("click", function () {
+  // Reset previous errors
+  resetErrors();
+
+  // Get the input values
+  const speciesName = document.getElementById("SpeciesName_ID").value;
+  const localName = document.getElementById("LocalName_ID").value;
+  const type = document.getElementById("Type_ID").value;
+  const familyName = document.getElementById("FamilyName_ID").value;
+  const serialNo = document.getElementById("SerialNo_ID").value;
+  const location = document.getElementById("Location_ID").value;
+  const description = document.getElementById("Description_ID").value;
+
+  const selectedImage = imageInput.files[0];
+
+  // Check if any input field is empty
+  if (!speciesName || !localName || !type || !familyName || !serialNo || !location || !description || !selectedImage) {
+    // Display 'This is required' error for empty fields
+    const emptyFields = document.querySelectorAll("input[type='text']:not([id='']):not([id='Description_ID'])");
+    emptyFields.forEach(field => {
+      if (!field.value.trim()) {
+        field.style.border = "2px solid red";
+        const errorMessage = createErrorMessage(field, "This is required");
+        field.parentNode.appendChild(errorMessage);
+
+        const removeErrorMessage = function () {
+          field.style.border = "";
+          errorMessage.remove();
+          field.removeEventListener("focus", removeErrorMessage);
+        };
+
+        field.addEventListener("focus", removeErrorMessage);
+      }
+    });
+
+    // Display error for empty description
+    const descriptionField = document.getElementById("Description_ID");
+    if (!descriptionField.value.trim()) {
+      descriptionField.style.border = "2px solid red";
+      const errorMessage = createErrorMessage(descriptionField, "This is required");
+      descriptionField.parentNode.appendChild(errorMessage);
+
+      const removeErrorMessage = function () {
+        descriptionField.style.border = "";
+        errorMessage.remove();
+        descriptionField.removeEventListener("focus", removeErrorMessage);
+      };
+
+      descriptionField.addEventListener("focus", removeErrorMessage);
+    }
+
+    // Display error for empty image
+    if (!selectedImage) {
+      imageBox.style.border = "2px solid red";
+      const errorMessage = createErrorMessage(imageBox, "This is required");
+      imageBox.parentNode.appendChild(errorMessage);
+
+      const removeErrorMessage = function () {
+        imageBox.style.border = "";
+        errorMessage.remove();
+        imageBox.removeEventListener("click", removeErrorMessage);
+        imageBox.removeEventListener("focus", removeErrorMessage);
+      };
+
+      imageBox.addEventListener("click", removeErrorMessage);
+      imageBox.addEventListener("focus", removeErrorMessage);
+    }
+
+    return; // Exit the function without saving if any input is empty
+  }
+  window.scrollTo(0, 0);
+
+  // Check species name existence before saving
+  checkSpeciesNameExistence(speciesName, function (speciesExists) {
+    if (!speciesExists) {
+      saveData(speciesName, localName, type, familyName, serialNo, location, description, selectedImage);
+    } else {
+      // Show error message for existing species name
+      const speciesNameInput = document.getElementById("SpeciesName_ID");
+      speciesNameInput.style.border = "2px solid red";
+      const errorMessage = createErrorMessage(speciesNameInput, "Species name already exists");
+      speciesNameInput.parentNode.appendChild(errorMessage);
+
+      const removeErrorMessage = function () {
+        speciesNameInput.style.border = "";
+        errorMessage.remove();
+        speciesNameInput.removeEventListener("focus", removeErrorMessage);
+      };
+
+      speciesNameInput.addEventListener("focus", removeErrorMessage);
+    }
+  });
+});
+
+function validateGeneralTextboxes() {
+  let isValid = true;
+  const textboxes = document.querySelectorAll("input[type='text']:not(#SpeciesName_ID)");
+  textboxes.forEach((textbox) => {
+    const isTextboxValid = validateTextbox(textbox);
+    if (!isTextboxValid) {
+      isValid = false;
+    }
+  });
+  return isValid;
+}
+
+function saveData(speciesName, type, familyName, serialNo, location, localName, description, selectedImage) {
+  // Send the data to the server using AJAX
+  const formData = new FormData();
+  formData.append("SpeciesName_ID", speciesName);
+  formData.append("Type_ID", type);
+  formData.append("FamilyName_ID", familyName);
+  formData.append("SerialNo_ID", serialNo);
+  formData.append("Location_ID", location);
+  formData.append("LocalName_ID", localName);
+  formData.append("Description_ID", description);
+
+  watermarkImage(selectedImage, function (watermarkedImageBlob) {
+    formData.append("image", watermarkedImageBlob); // Use the watermarked image blob
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "save_data.php", true);
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        // Show success message
+        showSuccessMessage();
+
+        // Redirect to the "collection.html" page after 2 seconds
+        setTimeout(function () {
+          window.location.href = "collection.php";
+        }, 1000);
+      } else {
+        console.error("Error saving data.");
+      }
+    };
+
+    xhr.send(formData);
+  });
+}
+
+
+function watermarkImage(imageFile, callback, watermarkOptions) {
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  const img = new Image();
+
+  const defaultOptions = {
+    scale: 0.5, // Adjust the scale of the watermark (0.5 means half the size)
+    alpha: 0.3, // Adjust the transparency of the watermark (0.5 means 50% transparency)
+  };
+
+  const options = { ...defaultOptions, ...watermarkOptions };
+
+  img.onload = function () {
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    ctx.drawImage(img, 0, 0);
+
+    const watermark = new Image();
+    watermark.src = "watermark.png";
+    watermark.onload = function () {
+      // Calculate the scaled dimensions of the watermark
+      const scaledWidth = watermark.width * options.scale;
+      const scaledHeight = watermark.height * options.scale;
+
+      // Calculate the position to center the scaled watermark on the image
+      const xPos = (canvas.width - scaledWidth) / 2;
+      const yPos = (canvas.height - scaledHeight) / 2;
+
+      // Set the global alpha value (transparency) for the watermark
+      ctx.globalAlpha = options.alpha;
+
+      ctx.drawImage(watermark, xPos, yPos, scaledWidth, scaledHeight);
+
+      // Reset the global alpha value
+      ctx.globalAlpha = 1.0;
+
+      // Convert the canvas content to a blob (watermarked image)
+      canvas.toBlob(function (blob) {
+        callback(blob); // Pass the watermarked image blob to the callback
+      }, "image/jpeg"); // Change to appropriate image format if needed (e.g., image/png)
+    };
+  };
+
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(imageFile);
+}
+
+
+
+
+// ... (rest of the existing code remains unchanged)
+
+
+function validateImageBox(selectedImage) {
+  if (!selectedImage) {
+    imageBox.style.border = "2px solid red";
+    const errorMessage = createErrorMessage(imageBox);
+    imageBox.parentNode.appendChild(errorMessage);
+
+    const removeErrorMessage = function () {
+      imageBox.style.border = "";
+      errorMessage.remove();
+      imageBox.removeEventListener("click", removeErrorMessage);
+      imageBox.removeEventListener("focus", removeErrorMessage);
+    };
+
+    imageBox.addEventListener("click", removeErrorMessage);
+    imageBox.addEventListener("focus", removeErrorMessage);
+
+    return false;
+  }
+  return true;
+}
+
+function validateTextbox(textbox) {
+  const value = textbox.value.trim();
+  if (value === "") {
+    textbox.style.border = "2px solid red";
+    const errorMessage = createErrorMessage(textbox);
+    textbox.parentNode.appendChild(errorMessage);
+
+    const removeErrorMessage = function () {
+      textbox.style.border = "";
+      errorMessage.remove();
+      textbox.removeEventListener("focus", removeErrorMessage);
+    };
+
+    textbox.addEventListener("focus", removeErrorMessage);
+
+    return false;
+  }
+  return true;
+}
+
+function resetErrors() {
+  const textboxes = document.querySelectorAll("input[type='text']");
+  textboxes.forEach((textbox) => {
+    textbox.style.border = "";
+    const errorMessage = textbox.parentNode.querySelector("p");
+    if (errorMessage) {
+      errorMessage.remove();
+    }
+  });
+
+  imageBox.style.border = "";
+  const imageErrorMessage = imageBox.parentNode.querySelector("p");
+  if (imageErrorMessage) {
+    imageErrorMessage.remove();
+  }
+}
+
+function createErrorMessage(element, message) {
+  const errorMessage = document.createElement("p");
+  errorMessage.style.color = "red";
+  errorMessage.textContent = message; // Use the message parameter
+  errorMessage.style.position = "absolute";
+  errorMessage.style.top = `${element.offsetTop + element.offsetHeight - 15}px`;
+  errorMessage.style.left = `${element.offsetLeft}px`;
+  return errorMessage;
+}
+
+function validateAllTextboxes() {
+  let isValid = true;
+  const textboxes = document.querySelectorAll("input[type='text']");
+  textboxes.forEach((textbox) => {
+    const isTextboxValid = validateTextbox(textbox);
+    if (!isTextboxValid) {
+      isValid = false;
+    }
+  });
+  return isValid;
+}
+
+function showSuccessMessage() {
+  const successMessage = document.createElement("div");
+  successMessage.style.background = "green";
+  successMessage.style.color = "white";
+  successMessage.style.textAlign = "center";
+  successMessage.style.padding = "10px";
+  successMessage.textContent = "Saved successfully";
+
+  document.body.insertBefore(successMessage, document.body.firstChild);
+
+  setTimeout(function () {
+    successMessage.remove();
+  }, 2500);
+
+  window.onload = function() {
+    const descriptionInput = document.getElementById('Description_ID');
+    descriptionInput.focus();
+    descriptionInput.setSelectionRange(0, 0);
+  };
+}
+
+  </script>
+</body>
+</html>
